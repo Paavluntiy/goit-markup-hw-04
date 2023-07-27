@@ -296,6 +296,25 @@ margin-bottom: 72px;
     text-align: center;
     
 }
+.social-links {
+  display: flex;
+  gap: 4px;
+  align-self: flex-end;
+  justify-content: center;
+  align-items: center;
+  margin-top: 8px;
+}
+.social-links .link{
+ justify-content: center;
+  align-items: center;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: var(--primary-blue-color);
+}
+.social-links .icon {
+  fill: var(--primary-whiter-color);
+}
 .section-workers{
     width: 1158px;
     margin: 0 auto;
