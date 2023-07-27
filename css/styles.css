@@ -141,6 +141,8 @@ align-items: center;
 .hero{
     padding: 188px 0;
     background-color: var(--primary-accent-color);
+    background-image: linear-gradient(rgba(46, 47, 66, 0.7),
+                rgba(46, 47, 66, 0.7)), url(../images/hero-bg.jpg);
 }
 .hero-title {
     font-size: 56px;
@@ -148,7 +150,6 @@ align-items: center;
     line-height: 1.07;
     letter-spacing: 0.02em;
     text-align: center;
-    background-color: var(--primary-accent-color);
     color: var(--primary-white-color);
     max-width: 496px;
     margin: 0 auto;
