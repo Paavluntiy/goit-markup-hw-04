@@ -225,6 +225,9 @@ align-items: center;
     display: flex;
     gap: 24px;
 }
+.advantages-list .icon{
+    fill: var(--primary-accent-color);
+}
 .visually-hidden {
     position: absolute;
     width: 1px;
