@@ -523,12 +523,16 @@ border: 1px solid var(--secondary-accent-color);
    .footer-social-links .link {
     display: flex;
        justify-content: center;
-       align-items: baseline;
+       align-items: center;
        width: 40px;
        height: 40px;
        border-radius: 50%;
        background-color: var(--primary-blue-color);
        transition: color 250ms ease-in-out 250ms, background-color 250ms ease-in-out 250ms;
+   }
+   .footer-social-links .link:hover,
+   .footer-social-links .link:focus{
+    background-color: var(--green-color);
    }
    .icon-footer{
     height: 100%;
