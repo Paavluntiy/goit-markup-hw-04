@@ -530,8 +530,8 @@ border: 1px solid var(--secondary-accent-color);
        background-color: var(--primary-blue-color);
        transition: color 250ms ease-in-out 250ms, background-color 250ms ease-in-out 250ms;
    }
-   .footer-social-links .link:hover,
-   .footer-social-links .link:focus{
+   .footer-social-links:hover,
+   .footer-social-links:focus{
     background-color: var(--green-color);
    }
    .icon-footer{
