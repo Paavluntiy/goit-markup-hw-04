@@ -413,6 +413,10 @@ margin: 0 auto;
 .customers{
     padding: 120px 0;
 }
+.customers .container{
+    width: 1128px;
+        height: 200px;
+}
 .customers-title{
     color: var(--primary-accent-color);
         text-align: center;
@@ -448,14 +452,18 @@ margin: 0 auto;
     justify-content: center;
     color: var(--lightslate-color);
 }
-.customers-link:hover,
-.customers-link:focus{
+.customers-link:hover{
     color: var(--secondary-accent-color);
     border-color: var(--secondary-accent-color);
 fill: var(--secondary-accent-color);
 border: 1px solid var(--secondary-accent-color);
 }
-
+.customers-link:focus{
+color: var(--secondary-accent-color);
+    border-color: var(--secondary-accent-color);
+    fill: var(--secondary-accent-color);
+    border: 1px solid var(--secondary-accent-color);
+}
 /** ------------------FOOTER----------------- */
 .footer {
     background-color: var(--primary-accent-color);
