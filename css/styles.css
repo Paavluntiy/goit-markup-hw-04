@@ -54,7 +54,9 @@ ul{
     position: relative;
     color: var(--secondary-accent-color);
 }
-
+.header-logo-link::after{
+    
+}
 .header-logo-iris {
     color: var(--primary-accent-color);
 }
