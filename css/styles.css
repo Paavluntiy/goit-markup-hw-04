@@ -535,6 +535,13 @@ color: var(--secondary-accent-color);
         justify-content: center;
         transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
    }
+   .icon-footer .link{
+    align-items: center;
+   }
+   .icon-footer:hover,
+   .icon-footer:focus{
+    background-color: var(--green-color);
+   }
    .footer-social-links .icon {
        margin: 8px 8px;
        fill: var(--primary-whiter-color);
