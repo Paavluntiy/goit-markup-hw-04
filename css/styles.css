@@ -100,6 +100,7 @@ ul{
     display: flex;
     align-items: center;
 }
+
 .header-about-text-link:hover,
 .header-about-text-link:focus {
     color: var(--secondary-accent-color);
@@ -128,6 +129,7 @@ gap: 40px;
     color: var(--primary-accent-color);
     padding: 24px 0;
     display: block;
+    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .header-about-text-link:active{
     color: var(--secondary-accent-color);
