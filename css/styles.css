@@ -129,7 +129,6 @@ gap: 40px;
     color: var(--primary-accent-color);
     padding: 24px 0;
     display: block;
-    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .header-about-text-link:active{
     color: var(--secondary-accent-color);
@@ -362,11 +361,25 @@ margin-bottom: 72px;
   height: 40px;
   border-radius: 50%;
   background-color: var(--primary-blue-color);
-transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);;
+transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
 
 }
-.social-links .icon { 
+.messenger-link{
+    display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: 100%;
+        border-radius: 50%;
+        background-color: var(--primary-blue-color);
+        transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.messenger-link .link:hover,
+.messenger-link .link:focus {
+    background-color: var(--secondary-accent-color);
+}
+.messenger-link .icon { 
     margin-top: 12px;
   fill: var(--primary-whiter-color);
 
