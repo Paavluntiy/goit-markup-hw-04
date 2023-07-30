@@ -55,8 +55,8 @@ ul{
 }
 .header-about-list .link{
     position: relative;
-        color: var(--secondary-accent-color);
         transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+        text-decoration: none;
 }
 .header-about-list .link::after{
     content: '';
@@ -81,7 +81,18 @@ ul{
     text-decoration: none;
     transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-
+.header-about-text-link-portfolio::after {
+    content: "";
+    position: absolute;
+    display: block;
+    left: 0;
+    bottom: -1px;
+    width: 66px;
+    height: 4px;
+    margin-top: 20px;
+    background-color: var(--secondary-accent-color);
+    border-radius: 2px;
+}
 
 .header-feedback-link {
     font-size: 16px;
@@ -123,7 +134,14 @@ ul{
 gap: 40px;
     
 }
-
+.header-about-text-link-portfolio{
+    text-decoration: none;
+        color: var(--secondary-accent-color);
+        padding: 24px 0;
+        display: block;
+        transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    
+}
 .header-about-text-link {
     text-decoration: none;
     color: var(--primary-accent-color);
@@ -131,9 +149,39 @@ gap: 40px;
     display: block;
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.header-about-text-link:active{
+.header-about-text-link:hover, 
+.header-about-text-link:focus{
     color: var(--secondary-accent-color);
     
+}
+.header-about-text-link-index:hover,
+.header-about-text-link-index:focus {
+    color: var(--secondary-accent-color);
+
+}
+.header-about-text-link-portfolio:hover,
+.header-about-text-link-portfolio:focus {
+    color: var(--secondary-accent-color);
+
+}
+.header-about-text-link-index {
+    text-decoration: none;
+color: var(--secondary-accent-color);
+    padding: 24px 0;
+    display: block;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.header-about-text-link-index::after {
+content: "";
+    position: absolute;
+    display: block;
+    left: 0;
+    bottom: -1px;
+    width: 48px;
+    height: 4px;
+    margin-top: 20px;
+    background-color: var(--active-link-color);
+    border-radius: 2px;
 }
 .adress-navigation {
     font-style: normal;
@@ -175,6 +223,7 @@ align-items: center;
                 background-repeat: no-repeat;
                 background-position: center;
                 background-size: cover;
+                margin: 0 auto;
 }
 .hero-title {
     font-size: 56px;
@@ -186,9 +235,11 @@ align-items: center;
     max-width: 496px;
     margin: 0 auto;
     margin-bottom: 48px;
+    
 }
 .hero-title-wrap{
     text-align: center;
+    justify-content: center;
 }
 
 .hero-button {
@@ -219,19 +270,6 @@ align-items: center;
     background-color: var(--secondary-accent-color);
 }
 
-.hero-button-text {
-    font-size: 16px;
-    font-weight: 500;
-    line-height: 1.5;
-    letter-spacing: 0.04em;
-    color: var(--primary-white-color);
-    transition: color 250ms ease-in-out 250ms, background-color 250ms ease-in-out 250ms;
-}
-
-.hero-button-text:hover,
-.hero-button-text:active {
-    background-color: var(--secondary-accent-color);
-}
 
 .advantages-topic {
     font-size: 20px;
@@ -266,11 +304,9 @@ align-items: center;
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 264px;
     height: 112px;
     border-radius: 4px;
         background: var(--primary-whiter-color);
-        padding: 24px 100px;
         margin-bottom: 8px;
 }
 .visually-hidden {
@@ -435,7 +471,6 @@ margin: 0 auto;
     display: flex;
     list-style-type: none;
     gap: 24px;
-    margin-bottom: 120px;
 }
 .customers-item{
     width: calc((100% - 5 * 24px) / 6);
@@ -455,15 +490,13 @@ margin: 0 auto;
     justify-content: center;
     color: var(--lightslate-color);
     transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
-        color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+        fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
         
 }
 .customers-link:hover, 
 .customers-link:focus {
-    color: var(--secondary-accent-color);
     border-color: var(--secondary-accent-color);
 fill: var(--secondary-accent-color);
-border: 1px solid var(--secondary-accent-color);
 }
 
 /** ------------------FOOTER----------------- */
@@ -513,7 +546,6 @@ border: 1px solid var(--secondary-accent-color);
        gap: 16px;
        justify-content: center;
        align-items: baseline;
-       margin-top: 8px;
        list-style-type: none;
    }
 .footer-link{
@@ -534,10 +566,7 @@ border: 1px solid var(--secondary-accent-color);
        background-color: var(--primary-blue-color);
        transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
    }
-   .footer-social-links:hover,
-   .footer-social-links:focus{
-    background-color: var(--green-color);
-   }
+   
    .icon-footer{
     height: 100%;
         width: 100%;
@@ -592,11 +621,7 @@ border: 1px solid var(--secondary-accent-color);
         padding: 12px 24px;
         justify-content: center;
             align-items: center;
-            border-radius: 4px;
                 border: 1px solid var(--cornflower-color);
-                box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1),
-                    0px 2px 1px rgba(0, 0, 0, 0.08),
-                    0px 2px 2px rgba(0, 0, 0, 0.12);
                     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
                         background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
                         border-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
@@ -608,7 +633,8 @@ border: 1px solid var(--secondary-accent-color);
     .all-button:hover {
         color: var(--primary-white-color);
         background-color: var(--secondary-accent-color);
-        border: 1px solid transparent;
+        border: 1px solid var(--cornflower-color);
+        border-radius: 4px;
         box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1),
                 0px 2px 1px rgba(0, 0, 0, 0.08),
                 0px 2px 2px rgba(0, 0, 0, 0.12);
@@ -653,10 +679,13 @@ border: 1px solid var(--secondary-accent-color);
 
         .portfolio-examples-item {
             width: calc((100% - 48px) / 3);
+        
+        }
+        .portfolio-examples-item:hover,
+        .portfolio-examples-item:focus{
             border: 1px solid var(--primary-whiter-color);
                 background: var(--white-color);
-            box-shadow: 0px 2px 1px 0px rgba(46, 47, 66, 0.08), 0px 1px 1px 0px rgba(46, 47, 66, 0.16), 0px 1px 6px 0px rgba(46, 47, 66, 0.08);
-
+                box-shadow: 0px 2px 1px 0px rgba(46, 47, 66, 0.08), 0px 1px 1px 0px rgba(46, 47, 66, 0.16), 0px 1px 6px 0px rgba(46, 47, 66, 0.08);
         }
 
         .portfolio-text {
@@ -668,9 +697,6 @@ border: 1px solid var(--secondary-accent-color);
         .portfolio-link{
             text-decoration: none;
             display: block;
-            box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
-                0px 1px 1px rgba(46, 47, 66, 0.16),
-                0px 2px 1px rgba(46, 47, 66, 0.08);
                 transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
         }
         .portfolio-link:focus .overlay-text,
