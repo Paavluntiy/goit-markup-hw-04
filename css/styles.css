@@ -478,6 +478,9 @@ margin: 0 auto;
     height: 88px;
 
 }
+.client-icon{
+    fill: currentColor;
+}
 .customers-link{
     border-color: var(--lightslate-color);
     fill: var(--lightslate-color);
@@ -497,6 +500,7 @@ margin: 0 auto;
 .customers-link:focus {
     border-color: var(--secondary-accent-color);
 fill: var(--secondary-accent-color);
+color: var(--secondary-accent-color);
 }
 
 /** ------------------FOOTER----------------- */
